@@ -15,7 +15,7 @@ int main(void)
 		hex_digit++;
 	}
 	hex_digit = 'a';
-	while (hex_digit <= 'z')
+	while (hex_digit <= 'f')
 	{
 		putchar(hex_digit);
 		hex_digit++;
