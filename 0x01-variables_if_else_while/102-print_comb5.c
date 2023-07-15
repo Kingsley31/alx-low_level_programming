@@ -7,10 +7,7 @@
  */
 int main(void)
 {
-	int first = '0';
-	int comma = ',';
-	int space = ' ';
-	int new_line = '\n';
+	int first = '0', comma = ',', space = ' ', new_line = '\n';
 
 	while (first <= '9')
 	{
@@ -25,9 +22,9 @@ int main(void)
 				int fourth = '1';
 
 				if (third > '0')
-				{
 					fourth = '0';
-				}
+				if (second > 0)
+					fourth++;
 				while (fourth <= '9')
 				{
 					putchar(first);
