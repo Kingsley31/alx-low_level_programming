@@ -16,7 +16,7 @@ int main(void)
 	c = 'A';
 	while (c <= 'Z')
 	{
-		puchchar(c);
+		putchar(c);
 	}
 	c = '\n';
 	putchar(c);
