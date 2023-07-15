@@ -29,6 +29,8 @@ int main(void)
 					fourth = second + 1;
 				if (third > '0' && second < '1')
 					fourth = '0';
+				if (second > '0' && third > '0')
+					fourth = '0';
 				while (fourth <= '9')
 				{
 					putchar(first);
