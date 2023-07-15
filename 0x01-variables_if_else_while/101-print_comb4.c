@@ -30,9 +30,12 @@ int main(void)
 					putchar(comma);
 					putchar(space);
 				}
+				inner_inner_num++;
 			}
+			inner_outer_num++;
 
 		}
+		outer_num++;
 	}
 	putchar(new_line);
 	return (0);
