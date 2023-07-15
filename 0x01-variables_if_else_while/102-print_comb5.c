@@ -13,6 +13,8 @@ int main(void)
 	{
 		int second = '0';
 
+		if (first > '0')
+			second = '1';
 		while (second <= '8')
 		{
 			int third = '0';
