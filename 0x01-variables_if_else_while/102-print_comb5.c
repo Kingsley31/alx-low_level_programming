@@ -22,7 +22,7 @@ int main(void)
 
 			while (third <= '9')
 			{
-				int fourth = '0';
+				int fourth = '1';
 
 				while (fourth <= '9')
 				{
