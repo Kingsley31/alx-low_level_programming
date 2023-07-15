@@ -1,6 +1,25 @@
 #include <stdio.h>
 
 /**
+ * print_nums - Print numbers
+ *
+ * Return - void
+ */
+void print_nums(int first,int second,int third,int fourth,int comma,int space)
+{
+	putchar(first);
+	putchar(second);
+	putchar(space);
+	putchar(third);
+	putchar(fourth);
+	if (first != '9' || second != '8' || third != '9' || fourth != '9')
+	{
+		putchar(comma);
+		putchar(space);
+	}
+}
+
+/**
  * main - Entry point
  *
  * Return: always 0
@@ -33,16 +52,7 @@ int main(void)
 					fourth = '0';
 				while (fourth <= '9')
 				{
-					putchar(first);
-					putchar(second);
-					putchar(space);
-					putchar(third);
-					putchar(fourth);
-					if (first != '9' || second != '8' || third != '9' || fourth != '9')
-					{
-						putchar(comma);
-						putchar(space);
-					}
+					print_nums(first, second, third, fourth, comma, space);
 					fourth++;
 				}
 				third++;
