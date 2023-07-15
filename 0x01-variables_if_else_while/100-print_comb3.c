@@ -20,7 +20,7 @@ int main(void)
 		{
 			putchar(outer_num);
 			putchar(inner_num);
-			if((outer_num != '8') || (inner_num != '9'))
+			if ((outer_num != '8') || (inner_num != '9'))
 			{
 				putchar(comma);
 				putchar(space);
