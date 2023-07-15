@@ -23,6 +23,8 @@ int main(void)
 			{
 				int fourth = '1';
 
+				if (third > '0')
+					fourth = '0';
 				if (second > '0')
 					fourth = second + 1;
 				while (fourth <= '9')
