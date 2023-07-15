@@ -15,16 +15,16 @@ int main(void)
 
 		while (second <= '8')
 		{
-			int third = '0';
+			int third = '1';
 
+			if (second > '0')
+				third = '0';
 			while (third <= '9')
 			{
 				int fourth = '1';
 
 				if (third > '0')
 					fourth = '0';
-				if (second > '0' && third < '0')
-					fourth++;
 				while (fourth <= '9')
 				{
 					putchar(first);
