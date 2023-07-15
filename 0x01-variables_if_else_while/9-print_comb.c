@@ -21,5 +21,7 @@ int main(void)
 		}
 		s_digit++;
 	}
+	s_digit = '\n';
+	putchar(s_digit);
 	return (0);
 }
