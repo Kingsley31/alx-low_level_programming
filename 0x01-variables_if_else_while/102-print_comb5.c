@@ -9,23 +9,37 @@ int main(void)
 {
 	int first = '0', comma = ',', space = ' ', new_line = '\n';
 
-	while (first <= '98')
+	while (first <= '9')
 	{
-		int second = first + '1';
+		int second = '0';
 
-		while (second <= '99')
+		while (second <= '8')
 		{
-			if (first <= '9')
-				putchar('0');
-			putchar(first);
-			putchar(space);
-			if (second <= '9')
-				putchar('0');
-			putchar(second);
-			if (first != '98' || second != '99')
+			int third = '0';
+
+			if (first > '0')
+				third = first;
+			while (third <= '9')
 			{
-				putchar(comma);
-				putchar(space);
+				int fourth = '1';
+
+				if (second > '0')
+					fourth = second + 1;
+				while (fourth <= '9')
+				{
+					putchar(first);
+					putchar(second);
+					putchar(space);
+					putchar(third);
+					putchar(fourth);
+					if (first != '9' || second != '8' || third != '9' || fourth != '9')
+					{
+						putchar(comma);
+						putchar(space);
+					}
+					fourth++;
+				}
+				third++;
 			}
 			second++;
 		}
