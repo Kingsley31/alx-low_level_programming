@@ -17,17 +17,17 @@ int main(void)
 		{
 			int third = '0';
 
-			if (second > '0')
-				third = '1';
 			if (first > '0')
 				third = first;
+			if (second > '0' && first < '0')
+				third = '0';
 			while (third <= '9')
 			{
 				int fourth = '1';
 
 				if (second > '0')
 					fourth = second + 1;
-				if (third > '0')
+				if (third > '0' && second < '1')
 					fourth = '0';
 				while (fourth <= '9')
 				{
