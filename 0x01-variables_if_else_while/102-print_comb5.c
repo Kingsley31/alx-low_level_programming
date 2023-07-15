@@ -15,7 +15,7 @@ int main(void)
 
 		while (second <= '8')
 		{
-			int third = '1';
+			int third = '0';
 
 			while (third <= '9')
 			{
