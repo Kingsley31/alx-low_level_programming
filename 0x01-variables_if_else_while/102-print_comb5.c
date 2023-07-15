@@ -23,7 +23,7 @@ int main(void)
 
 				if (third > '0')
 					fourth = '0';
-				if (second > 0)
+				if (second > '0')
 					fourth++;
 				while (fourth <= '9')
 				{
