@@ -17,6 +17,8 @@ int main(void)
 		{
 			int third = '0';
 
+			if (second > '0')
+				third = '1';
 			if (first > '0')
 				third = first;
 			while (third <= '9')
