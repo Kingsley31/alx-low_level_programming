@@ -51,14 +51,19 @@ int main(void)
 			{
 				int fourth = '1';
 
-				if (second > '0')
-					fourth = second + 1;
 				if (third > '0' && second < '1')
 					fourth = '0';
 				if (second > '0' && third > '0')
 					fourth = '0';
+				if (first > '0' && second > '0' && third > '0')
+					fourth = second + 1;
 				while (fourth <= '9')
 				{
+					if (first == third && second == fourth)
+					{
+						fourth++;
+						continue;
+					}
 					print_nums(first, second, third, fourth, comma, space);
 					fourth++;
 				}
