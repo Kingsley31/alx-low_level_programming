@@ -1,78 +1,56 @@
 #include <stdio.h>
 
 /**
- * print_nums - Print numbers
+ * printNum - prints integers using putchar
  *
- * @first: first number
- * @second: second number
- * @third: third number
- * @fourth: fourth number
- * @comma: comma character
- * @space: space character
- * Return: void
+ * @num: number to be printed
+ * Return: returns nothing
  */
-void print_nums(int first, int second, int third, int fourth,
-		int comma, int space)
+void printNum(int num)
 {
-	putchar(first);
-	putchar(second);
-	putchar(space);
-	putchar(third);
-	putchar(fourth);
-	if (first != '9' || second != '8' || third != '9' || fourth != '9')
+	if (num > 9)
 	{
-		putchar(comma);
-		putchar(space);
+		printNum(num / 10);
+		num %= 10;
 	}
+
+	putchar(num + '0');
 }
 
 /**
- * main - Entry point
+ * main - main function
  *
- * Return: always 0
+ * Return: 0 on success
  */
 int main(void)
 {
-	int first = '0', comma = ',', space = ' ', new_line = '\n';
+	/* Initializing some varibles */
+	int start = 0, end = 1;
 
-	while (first <= '9')
+	while (start <= 98)
 	{
-		int second = '0';
-
-		while (second <= '8')
+		while (end <= 99)
 		{
-			int third = '0';
+			if (start <= 9)
+				putchar('0');
+			printNum(start);
+			putchar(' ');
 
-			if (first > '0')
-				third = first;
-			if (second > '0' && first < '0')
-				third = '0';
-			while (third <= '9')
+			if (end <= 9)
+				putchar('0');
+			printNum(end);
+
+			if (start != 98)
 			{
-				int fourth = '1';
-
-				if (third > '0' && second < '1')
-					fourth = '0';
-				if (second > '0' && third > '0')
-					fourth = '0';
-				if (first > '0' && second > '0' && third > '0')
-					fourth = second + 1;
-				while (fourth <= '9')
-				{
-					if (first == third && second == fourth)
-					{
-						fourth++;
-						continue;
-					}
-					print_nums(first, second, third, fourth, comma, space);
-					fourth++;
-				}
-				third++;
+				putchar(',');
+				putchar(' ');
 			}
-			second++;
+			end++;
 		}
-		first++;
+		start++;
+		end = start + 1;
 	}
-	putchar(new_line);
+	putchar('\n');
+
 	return (0);
 }
