@@ -11,7 +11,8 @@
  * @space: space character
  * Return: void
  */
-void print_nums(int first, int second, int third, int fourth, int comma, int space)
+void print_nums(int first, int second, int third, int fourth,
+		int comma, int space)
 {
 	putchar(first);
 	putchar(second);
