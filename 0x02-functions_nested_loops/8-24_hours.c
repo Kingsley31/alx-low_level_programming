@@ -26,7 +26,6 @@ void print_time(int outer, int inner)
 		_putchar(sdigit + '0');
 		_putchar(':');
 	}
-	
 	if (inner < 10)
 	{
 		_putchar('0');
