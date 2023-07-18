@@ -2,7 +2,7 @@
 
 /**
  * print_sign -  prints + if n is positive, - n if n is negative,
- * 	0 if n is zero
+ * 0 if n is zero
  *
  * @n: number that it's sign should be printed
  *
