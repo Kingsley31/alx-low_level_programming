@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_sign -  prints + if n is positive, - n if n is negative, 0 if n is zero
+ * print_sign -  prints + if n is positive, - n if n is negative,
+ * 			0 if n is zero
  *
  * @n: number that it's sign should be printed
  *
@@ -18,8 +19,8 @@ int print_sign(int n)
 	else if (n == 0)
 	{
 		_putchar('0');
-		return 0;
+		return (0);
 	}
 	_putchar('-');
-	return -1;
+	return (-1);
 }
