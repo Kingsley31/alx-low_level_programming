@@ -3,6 +3,10 @@
 /**
  * print_time - prints the current time
  *
+ * @outer: time in hour
+ *
+ * @inner: time in minutes
+ *
  * Return: void
  */
 void print_time(int outer, int inner)
@@ -48,7 +52,7 @@ void jack_bauer(void)
 {
 	int outer = 0;
 
-	while (outer <= 25)
+	while (outer <= 23)
 	{
 		int inner = 0;
 
