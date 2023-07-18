@@ -17,4 +17,6 @@ int _abs(int n);
 
 int print_last_digit(long int n);
 
+void jack_bauer(void);
+
 #endif
