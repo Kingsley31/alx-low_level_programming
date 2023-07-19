@@ -12,9 +12,9 @@ int main(void)
 
 	while (counter <= 50)
 	{
-		if (couter == 1 || counter == 2)
+		if (counter == 1 || counter == 2)
 		{
-			printed[couter - 1] = counter;
+			printed[counter - 1] = counter;
 			printf("%d", counter);
 		}
 		else if (counter > 2)
