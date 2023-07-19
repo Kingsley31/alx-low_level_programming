@@ -29,12 +29,12 @@ void times_table(void)
 				_putchar(',');
 			}
 			if ((row * (col + 1)) > 9)
+				_putchar(' ');
+			else
 			{
 				_putchar(' ');
 				_putchar(' ');
 			}
-			else
-				_putchar(' ');
 			if (col == 9)
 				_putchar('\n');
 			col++;
