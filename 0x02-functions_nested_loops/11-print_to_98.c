@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 
 /**
@@ -14,15 +13,7 @@ void print_whole_num(int num)
 {
 	if (num > 9)
 	{
-		char nums[32];
-		int i = 0;
-
-		snprintf(nums, sizeof(nums), "%d", num);
-		while (i != '\0')
-		{
-			_putchar(nums[i]);
-			i++;
-		}
+		printf("%d", num);
 	}
 	else if (num < 10)
 	{
