@@ -9,19 +9,19 @@
  */
 int main(void)
 {
-	static unsigned long int prev1 = 1;
-	static unsigned long int prev2 = 2;
-	static unsigned long int next;
-	int i;
+	static unsigned long int first = 0, second = 1, sum, i;
 
-	printf("%lu, %lu", prev1, prev2);
-	for (i = 3; i <= 98; i++)
+	for (i = 1; i <= range; i++)
 	{
-		next = prev1 + prev2;
-		printf(", %lu", next);
-		prev1 = prev2;
-		prev2 = next;
+		sum = first + second;
+		first = second;
+		second = sum;
+
+		printf("%lu", sum);
+
+		if (i < range)
+			printf(" ,");
 	}
 	printf("\n");
-	return (0);
+	return (0)
 }
