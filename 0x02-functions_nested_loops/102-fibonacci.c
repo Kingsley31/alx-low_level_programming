@@ -15,12 +15,12 @@ int main(void)
 		if (counter == 1 || counter == 2)
 		{
 			printed[counter - 1] = counter;
-			printf("%l", counter);
+			printf("%ld", counter);
 		}
 		else if (counter > 2)
 		{
 			printed[counter - 1] = printed[counter - 2] + printed[counter - 3];
-			printf("%l", printed[counter - 2] + printed[counter - 3]);
+			printf("%ld", printed[counter - 2] + printed[counter - 3]);
 		}
 		if (counter < 50)
 		{
