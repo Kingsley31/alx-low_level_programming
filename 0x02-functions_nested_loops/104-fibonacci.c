@@ -11,13 +11,13 @@ int main(void)
 {
 	static unsigned long int prev1 = 1;
 	static unsigned long int prev2 = 2;
+	static unsigned long int next;
 	int i;
 
 	printf("%lu, %lu", prev1, prev2);
 	for (i = 3; i <= 98; i++)
 	{
-		static unsigned long int next = prev1 + prev2;
-
+		next = prev1 + prev2;
 		printf(", %lu", next);
 		prev1 = prev2;
 		prev2 = next;
