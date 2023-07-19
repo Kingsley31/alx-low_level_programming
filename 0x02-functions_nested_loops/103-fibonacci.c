@@ -21,6 +21,7 @@ int main(void)
 		else
 		{
 			unsigned long int fnum = printed[counter - 1] + printed[counter - 2];
+
 			printed[counter] = fnum;
 			sum += (fnum % 2) == 0 ? fnum : 0;
 		}
