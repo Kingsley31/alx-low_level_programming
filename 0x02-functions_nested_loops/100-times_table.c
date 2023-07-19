@@ -19,9 +19,13 @@ void print_times_table(int n)
 
 		while (col <= n)
 		{
-			if (((col + 1) * i) > 9 && col < n)
+			if (((col + 1) * i) > 9 && ((col + 1) * i) < 100 && col < n)
 			{
 				printf("%d,  ", col * i);
+			}
+			else if (((col + 1) * i) > 9 && ((col + 1) * i) > 99 && col < n)
+			{
+				printf("%d, ", col * i);
 			}
 			else if (((col + 1) * i) < 10 && col < n)
 			{
