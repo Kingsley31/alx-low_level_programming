@@ -10,9 +10,10 @@ int main(void)
 {
 	unsigned long int prev1 = 1;
 	unsigned long int prev2 = 2;
+	int i;
 
 	printf("%lu, %lu", prev1, prev2);
-	for (int i = 3; i <= 98; i++)
+	for (i = 3; i <= 98; i++)
 	{
 		unsigned long int next = prev1 + prev2;
 
