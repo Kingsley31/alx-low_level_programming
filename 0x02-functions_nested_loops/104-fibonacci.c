@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint.h>
 
 /**
  * main - prints first 98 Fabonacci number followed by new line each seperated,
@@ -8,16 +9,16 @@
  */
 int main(void)
 {
-	unsigned long int prev1 = 1;
-	unsigned long int prev2 = 2;
+	uintmax_t prev1 = 1;
+	uintmax_t prev2 = 2;
 	int i;
 
-	printf("%lu, %lu", prev1, prev2);
+	printf("%ju, %ju", prev1, prev2);
 	for (i = 3; i <= 98; i++)
 	{
-		unsigned long int next = prev1 + prev2;
+		uintmax_t next = prev1 + prev2;
 
-		printf(", %lu", next);
+		printf(", %ju", next);
 		prev1 = prev2;
 		prev2 = next;
 	}
