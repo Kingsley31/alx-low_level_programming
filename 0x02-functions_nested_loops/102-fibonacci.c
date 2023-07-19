@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int printed[51];
+	long int printed[51];
 	int counter = 1;
 
 	while (counter <= 50)
@@ -15,12 +15,12 @@ int main(void)
 		if (counter == 1 || counter == 2)
 		{
 			printed[counter - 1] = counter;
-			printf("%d", counter);
+			printf("%l", counter);
 		}
 		else if (counter > 2)
 		{
 			printed[counter - 1] = printed[counter - 2] + printed[counter - 3];
-			printf("%d", printed[counter - 2] + printed[counter - 3]);
+			printf("%l", printed[counter - 2] + printed[counter - 3]);
 		}
 		if (counter < 50)
 		{
