@@ -19,17 +19,22 @@ void times_table(void)
 
 			if (num > 9)
 			{
-				_putchar((num/10) + '0');
-				_putchar((num%10) + '0');
+				_putchar((num / 10) + '0');
+				_putchar((num % 10) + '0');
 			}
 			else if (num < 10)
 				_putchar(num + '0');
 			if (col < 9)
 			{
 				_putchar(',');
+			}
+			if ((row * (col + 1)) > 9)
+			{
 				_putchar(' ');
 				_putchar(' ');
 			}
+			else
+				_putchar(' ');
 			if (col == 9)
 				_putchar('\n');
 			col++;
