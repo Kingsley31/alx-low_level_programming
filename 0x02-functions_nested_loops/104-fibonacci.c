@@ -19,7 +19,7 @@ int main(void)
 
 		printf("%lu", sum);
 
-		if (i < range)
+		if (i < 98)
 			printf(" ,");
 	}
 	printf("\n");
