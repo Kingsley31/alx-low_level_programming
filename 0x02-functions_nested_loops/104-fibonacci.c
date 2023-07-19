@@ -11,7 +11,7 @@ int main(void)
 {
 	static unsigned long int first = 0, second = 1, sum, i;
 
-	for (i = 1; i <= range; i++)
+	for (i = 1; i <= 98; i++)
 	{
 		sum = first + second;
 		first = second;
