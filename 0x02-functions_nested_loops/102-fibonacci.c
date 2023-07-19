@@ -15,7 +15,7 @@ int main(void)
 		if (counter == 1 || counter == 2)
 		{
 			printed[counter - 1] = counter;
-			printf("%ld", counter);
+			printf("%d", counter);
 		}
 		else if (counter > 2)
 		{
