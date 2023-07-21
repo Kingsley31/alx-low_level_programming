@@ -46,6 +46,7 @@ int main(void)
 		if (n % i != 0)
 			continue;
 		int prime = is_prime(i);
+
 		if (prime == 1 && i > largest_factor)
 			largest_factor = i;
 	}
