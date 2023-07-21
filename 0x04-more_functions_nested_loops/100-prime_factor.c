@@ -45,7 +45,8 @@ int main(void)
 	{
 		if (n % i != 0)
 			continue;
-		if (is_prime(i) && i > largest_factor)
+		int prime = is_prime(i);
+		if (prime == 1 && i > largest_factor)
 			largest_factor = i;
 	}
 	printf("%d\n", largest_factor);
