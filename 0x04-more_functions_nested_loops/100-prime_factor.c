@@ -5,10 +5,10 @@
  * @n: number to check
  * Return: 1 n is prime, 0 n is not a prime number
  */
-int is_prime(int n)
+int is_prime(unsigned long int n)
 {
-	unsigned int counter = 2;
-	unsigned int number_is_prime = 1;
+	unsigned long int counter = 2;
+	unsigned long int number_is_prime = 1;
 	
 	if (n <= 1)
 	{
@@ -37,19 +37,20 @@ int is_prime(int n)
  */
 int main(void)
 {
-	unsigned int n = 612852475143;
-	unsigned int i;
-	unsigned int largest_factor = 0;
+	unsigned long int n = 612852475143;
+	unsigned long int i;
+	unsigned long int largest_factor = 0;
+	int prime = 0;
 	
 	for (i = 2; i <= n; i++)
 	{
 		if (n % i != 0)
 			continue;
-		int prime = is_prime(i);
+		prime = is_prime(i);
 
 		if (prime == 1 && i > largest_factor)
 			largest_factor = i;
 	}
-	printf("%d\n", largest_factor);
+	printf("%lu\n", largest_factor);
 	return (0);
 }
