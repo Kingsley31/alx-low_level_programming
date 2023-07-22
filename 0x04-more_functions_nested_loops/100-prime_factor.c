@@ -7,8 +7,8 @@
  */
 int is_prime(int n)
 {
-	int counter = 2;
-	int number_is_prime = 1;
+	unsigned int counter = 2;
+	unsigned int number_is_prime = 1;
 	
 	if (n <= 1)
 	{
@@ -37,9 +37,9 @@ int is_prime(int n)
  */
 int main(void)
 {
-	int n = 612852475143;
-	int i;
-	int largest_factor = 0;
+	unsigned int n = 612852475143;
+	unsigned int i;
+	unsigned int largest_factor = 0;
 	
 	for (i = 2; i <= n; i++)
 	{
