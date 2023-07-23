@@ -26,7 +26,6 @@ int is_prime(unsigned long int n)
 	return (number_is_prime);
 }
 
-
 /**
  * main - finds and prints the largest prime factor of 612852475143
  * @void: accepts nothing
