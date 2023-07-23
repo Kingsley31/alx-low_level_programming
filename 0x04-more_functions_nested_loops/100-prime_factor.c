@@ -10,6 +10,7 @@ int is_prime(unsigned long int n)
 	unsigned long int counter = 5;
 	unsigned long int number_is_prime = 1;
 	
+	
 	if (n < 2)
 		return (0);
 	if (n == 2 || n == 3)
@@ -39,7 +40,8 @@ int main(void)
 	unsigned long int largest_factor = 0;
 	int assumed_factor_is_prime = 0;
 	unsigned long int prime_factors_sum = 1;
-	
+
+
 	while (prime_factors_sum < n)
 	{
 		if (dividend % asummed_factor != 0)
