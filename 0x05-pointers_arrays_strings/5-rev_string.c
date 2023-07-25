@@ -26,7 +26,7 @@ void rev_string(char *s)
 	{
 		int upper_index = len - count;
 		int lower_index = count;
-		
+
 		if (upper_index > 0)
 		{
 			char tmp = *(s + upper_index);
