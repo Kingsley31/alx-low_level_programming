@@ -16,10 +16,11 @@ void puts_half(char *str)
 	}
 	len -= 1;
 	count = len / 2;
+	count += 1;
 	if (len % 2 != 0)
 	{
 		count = len / 2;
-		count += 2;
+		count += 1;
 	}
 	while (*(str + count) != 0)
 	{
