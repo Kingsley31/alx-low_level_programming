@@ -8,7 +8,7 @@
  *
  * Return: char* pointer
  */
-char *_strcat(char *dest,char *src)
+char *_strcat(char *dest, char *src)
 {
 	int len = 0;
 	int count = 0;
@@ -26,5 +26,4 @@ char *_strcat(char *dest,char *src)
 	}
 	dest[len] = '\0';
 	return (dest);
-
 }
