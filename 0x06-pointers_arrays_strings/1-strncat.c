@@ -3,6 +3,7 @@
  * _strncat - joins src to dest string based on n bytes
  * @dest: string to join src string with
  * @src: string to add to dest string
+ * @n: the number of bytes to be copied
  * Return: dest string
  */
 char *_strncat(char *dest, char *src, int n)
