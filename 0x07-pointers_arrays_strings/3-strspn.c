@@ -5,23 +5,22 @@
  * @accept: string to check its byte occurance in s
  * Return: length of accept bytes in s
  */
-int _strspn(char *s, char *accept)
 {
-	int i = 0;
-	int j = 0;
-	int count = 0;
+	int counter = 0, i = 0, j = 0;
 
-	while (s[i] != '\0')
+	while (s[j] != '\0')
 	{
-		while (accept[i] != '\0')
+		for (i = 0; accept[i] != '\0'; i++)
 		{
-			if (s[i] == accept[i])
+			if (accept[i] == s[j])
 			{
-				count++;
+				counter++;
+				break;
 			}
-			j++;
+			if (accept[i + 1] == '\0')
+				return (counter);
 		}
-		i++;
+		j++;
 	}
-	return (count);
+	return (counter);
 }
