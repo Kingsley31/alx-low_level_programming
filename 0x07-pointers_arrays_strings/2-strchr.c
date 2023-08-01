@@ -9,7 +9,7 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0;
-	char *p = NULL;
+	char *p;
 
 	while (*(s + i) != 0)
 	{
@@ -20,5 +20,5 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	return (p);
+	return (NULL);
 }
