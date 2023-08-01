@@ -18,5 +18,5 @@ int _strspn(char *s, char *accept)
 		}
 		i++;
 	}
-	return count;
+	return (count);
 }
