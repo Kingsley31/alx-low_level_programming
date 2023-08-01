@@ -5,6 +5,7 @@
  * @accept: string to check its byte occurance in s
  * Return: length of accept bytes in s
  */
+unsigned int _strspn(char *s, char *accept)
 {
 	int counter = 0, i = 0, j = 0;
 
