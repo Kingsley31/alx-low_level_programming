@@ -22,7 +22,7 @@ int str_is_int(char *s)
 {
 	int i = 0;
 
-	if (!_isdigit(s[i]) || s[i] != '-')
+	if (_isdigit(s[i]) != 1 && s[i] != '-')
 	{
 		return (0);
 	}
