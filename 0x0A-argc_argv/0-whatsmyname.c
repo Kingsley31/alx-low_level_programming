@@ -2,8 +2,8 @@
 
 /**
  * main - prints the program name
- * @argc - arguement count
- * @argv - arguement ventor, contains array of arguements passed to the
+ * @argc: arguement count
+ * @argv: arguement ventor, contains array of arguements passed to the
  * program.
  * Return: 0 success
  */
