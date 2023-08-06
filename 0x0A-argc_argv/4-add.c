@@ -33,6 +33,7 @@ int str_is_int(char *s)
 		{
 			return (0);
 		}
+		i++;
 	}
 	return (1);
 }
