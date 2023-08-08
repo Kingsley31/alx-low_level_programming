@@ -25,5 +25,5 @@ char *create_array(unsigned int size, char c)
 		len++;
 	}
 	arr[size] = '\0';
-	return arr;
+	return (arr);
 }
