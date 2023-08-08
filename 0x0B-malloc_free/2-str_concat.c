@@ -44,15 +44,8 @@ char *str_concat(char *s1, char *s2)
 			i++;
 			continue;
 		}
-		else if (i < len1 && s == NULL)
-		{
-			s[i] = '';
-			i++;
-			continue;
-		}
 		if (s2 == NULL)
 		{
-			s[i] = '';
 			i++;
 		}
 		else
