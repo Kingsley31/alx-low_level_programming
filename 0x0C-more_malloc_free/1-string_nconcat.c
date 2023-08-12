@@ -20,7 +20,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len1++;
 	while (s2[len2] != '\0')
 		len2++;
-	totallen = len1 + (n >= len2 ? len2 : n);
+	if (n >= len2)
+		n = len2;
+	totallen = len1 + n + 1;
 	p = malloc(totallen * sizeof(char));
 	if (p == NULL)
 		return (NULL);
@@ -29,12 +31,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p[c1] = s1[c1];
 		c1++;
 	}
-	while (c1 < totallen)
+	while (c2 < n)
 	{
 		p[c1] = s2[c2];
 		c1++;
 		c2++;
 	}
-	p[totallen] = '\0';
+	p[c1] = '\0';
 	return (p);
 }
