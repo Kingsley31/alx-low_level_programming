@@ -8,7 +8,7 @@
  */
 void initmem(void *p, unsigned int n)
 {
-	unsigned char *ptr = (unsigned char *) p;
+	unsigned int *ptr = (unsigned int *) p;
 	unsigned int i = 0;
 
 	while (i < n)
