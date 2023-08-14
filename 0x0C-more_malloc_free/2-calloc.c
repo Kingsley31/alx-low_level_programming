@@ -34,6 +34,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	p = malloc((nmemb * size));
 	if (p == NULL)
 		return (NULL);
-	p = initmem(p, nmemb);
+	p = initmem(p, nmemb * size);
 	return (p);
 }
