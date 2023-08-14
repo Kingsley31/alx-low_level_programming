@@ -12,10 +12,10 @@ void *initmem(void *p, unsigned int n)
 	unsigned int i = 0;
 
 	while (i < n)
-        {
-                ptr[i] = 0;
-                i++;
-        }
+	{
+		ptr[i] = 0;
+		i++;
+	}
 	return (p);
 }
 
