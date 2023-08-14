@@ -13,7 +13,7 @@ void initmem(void *p, unsigned int n)
 
 	while (i < n)
         {
-                ptr[i] = 0;
+                ptr[i] = '\0';
                 i++;
         }
 }
