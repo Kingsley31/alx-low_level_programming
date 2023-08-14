@@ -6,7 +6,7 @@
  * @p: pointer to the memory blocks
  * Return: void
  */
-void initmem(void *p, unsigned int n)
+void *initmem(void *p, unsigned int n)
 {
 	char *ptr = (char *) p;
 	unsigned int i = 0;
@@ -16,6 +16,7 @@ void initmem(void *p, unsigned int n)
                 ptr[i] = 0;
                 i++;
         }
+	return ((void *) ptr);
 }
 
 /**
@@ -33,6 +34,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	p = malloc(nmemb * size);
 	if (p == NULL)
 		return (NULL);
-	initmem(p, nmemb);
+	p = initmem(p, nmemb);
 	return (p);
 }
