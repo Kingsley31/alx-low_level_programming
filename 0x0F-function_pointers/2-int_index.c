@@ -1,13 +1,13 @@
 #include <stdlib.h>
 
 /**
- * init_index - searches for an integer
+ * int_index - searches for an integer
  * @array: array containing the integer to be search for
  * @size: number of elements in the array
  * @cmp: the pointer to the comparator function
  * Return: the index of the first element of which cmp doesn't return 0
  */
-int init_index(int *array, int size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int len = size;
 	int i = 0;
