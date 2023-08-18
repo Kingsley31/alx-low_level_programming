@@ -6,7 +6,7 @@
  * print_numbers - prints numbers followed by new line.
  * @separator: character for separating the numbers
  * @n: number of arguements passed
- * Return: void 
+ * Return: void.
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
