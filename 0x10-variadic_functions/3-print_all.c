@@ -31,15 +31,13 @@ void print_all(const char * const format, ...)
 {
 	const char *s = format, *s1 = format;
 	int str_len = 0, i = 0, put_separator = 1;
+	va_list list;
 
 	if (format == NULL)
 	{
 		printf("(nil)\n");
 		return;
 	}
-
-	va_list list;
-
 	va_start(list, format);
 
 	while (*s)
