@@ -10,7 +10,6 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 1;
 	int result = 0;
 	int (*opfunc)(int, int);
 

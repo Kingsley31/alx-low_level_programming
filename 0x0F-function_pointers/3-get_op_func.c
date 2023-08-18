@@ -18,9 +18,9 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (i < (sizeof(ops) / sizeof(op_t)))
+	while (i < (int)(sizeof(ops) / sizeof(op_t)))
 	{
-		if (ops[i].op == *s)
+		if (ops[i].op[0] == s[0])
 			return (ops[i].f);
 		i++;
 	}
