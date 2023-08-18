@@ -33,10 +33,11 @@ void print_all(const char * const format, ...)
 	int str_len = 0, i = 0, put_separator = 1;
 	va_list list;
 
-	if (format == NULL)
+	switch (format)
 	{
-		printf("(nil)\n");
-		return;
+		case NULL:
+			printf("(nil)\n");
+			return;
 	}
 	va_start(list, format);
 
