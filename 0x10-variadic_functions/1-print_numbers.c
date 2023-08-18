@@ -6,24 +6,26 @@
  * print_numbers - prints numbers followed by new line.
  * @separator: character for separating the numbers
  * @n: number of arguements passed
- * Return: void.
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i = 0;
 	const char *sep = separator;
-	va_list ap;
+	int num;
 
-	if (n <= 0)
-		return;
-	va_start(ap, n);
-	while (i < n)
+	va_list list;
+
+	va_start(list, n);
+
+	for ( ; i < n; i++)
 	{
-		printf("%d", va_arg(ap, int));
-		if ((i + 1) != n && sep != NULL)
+		num = va_arg(list, int);
+		printf("%d", num);
+
+		if (sep != NULL && i < n - 1)
 			printf("%s", sep);
-		i++;
 	}
 	printf("\n");
-	va_end(ap);
+	va_end(list);
 }
