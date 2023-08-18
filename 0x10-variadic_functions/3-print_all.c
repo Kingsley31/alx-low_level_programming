@@ -4,6 +4,20 @@
 #include <stdlib.h>
 
 /**
+ * check_param - checks if format is null and exit the program
+ * @format: first argument passed in
+ * Return: void
+ */
+void check_param(const char * const format)
+{
+	if (format == NULL)
+	{
+		printf("(nil)\n");
+		exit(0);
+	}
+}
+
+/**
  * is_null - checks whether given string is null.
  * @s: string to be checked.
  *
@@ -33,12 +47,7 @@ void print_all(const char * const format, ...)
 	int str_len = 0, i = 0, put_separator = 1;
 	va_list list;
 
-	switch (format)
-	{
-		case NULL:
-			printf("(nil)\n");
-			return;
-	}
+	check_param(format);
 	va_start(list, format);
 
 	while (*s)
