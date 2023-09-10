@@ -1,6 +1,19 @@
 #include <stdio.h>
 
 /**
+ * bit_is_set - check if bit at a particular position is set
+ * @n: the number to check it's bit
+ * @index: the position of the bit
+ * Return: 1 if bit is set and 0 if not
+ */
+int bit_is_set(unsigned long int n, unsigned int index)
+{
+	int is_set = 0;
+
+	is_set = (n >> index) & 1;
+	return (is_set);
+}
+/**
  * clear_bit - sets the value of a bit to 0 at a given index
  * @n: pointer to the number to set the bit
  * @index: position of the bit to set to 0
@@ -16,6 +29,8 @@ int clear_bit(unsigned long int *n, unsigned int index)
 		return (0);
 	if (*n == 0 && index == 0)
 		return (1);
+	if(bit_is_set(*n, index))
+		return (status);
 	*n = *n ^ (1 << index);
 	status = 1;
 	return (status);
