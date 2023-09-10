@@ -8,11 +8,14 @@
  */
 int bit_is_set(unsigned long int n, unsigned int index)
 {
-	int is_set = 0;
+	int value = -1;
 
-	is_set = (n >> index) & 1;
-	return (is_set);
+	if (index > 64)
+		return (value);
+	value = (n >> index) & 1;
+	return (value);
 }
+
 /**
  * clear_bit - sets the value of a bit to 0 at a given index
  * @n: pointer to the number to set the bit
@@ -29,7 +32,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 		return (0);
 	if (*n == 0 && index == 0)
 		return (1);
-	if(!bit_is_set(*n, index))
+	if(!bit_is_set(*n, index) == 1)
 		return (status);
 	*n = *n ^ (1 << index);
 	status = 1;
