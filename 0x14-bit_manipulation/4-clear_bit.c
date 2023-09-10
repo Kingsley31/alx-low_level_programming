@@ -29,7 +29,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 		return (0);
 	if (*n == 0 && index == 0)
 		return (1);
-	if(bit_is_set(*n, index))
+	if(!bit_is_set(*n, index))
 		return (status);
 	*n = *n ^ (1 << index);
 	status = 1;
