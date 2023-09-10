@@ -33,7 +33,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	if (*n == 0 && index == 0)
 		return (1);
 	if ((!bit_is_set(*n, index)) == 1)
-		return (status);
+		return (1);
 	*n = *n ^ (1 << index);
 	status = 1;
 	return (status);
