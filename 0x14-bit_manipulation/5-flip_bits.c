@@ -2,7 +2,7 @@
 /**
  * get_first_bit - gets the first bit of a number
  * @n: the number to get it's first bit
- * Returns: the first bit of n
+ * Return: the first bit of n
  */
 unsigned int get_first_bit(unsigned long int n)
 {
