@@ -63,7 +63,7 @@ void test_file_descriptor(ssize_t fd_val)
 int main(int argc, char **argv)
 {
 	ssize_t in_fd = open(argv[1], O_RDONLY), bytes_read, bytes_written;
-	ssize_t out_fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
+	ssize_t out_fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
 	char buf[1024];
 
