@@ -51,7 +51,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	buffer[letters] = '\0';
-	bytes_written = write(1, buffer, bytes_written);
+	bytes_written = write(STDOUT_FILENO, buffer, bytes_written);
 	if (bytes_written < 0)
 	{
 		close_and_free(fd, buffer);
