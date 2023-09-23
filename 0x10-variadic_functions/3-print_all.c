@@ -4,20 +4,6 @@
 #include <stdlib.h>
 
 /**
- * check_param - checks if format is null and exit the program
- * @format: first argument passed in
- * Return: void
- */
-void check_param(const char * const format)
-{
-	if (format == NULL)
-	{
-		printf("(nil)\n");
-		exit(0);
-	}
-}
-
-/**
  * is_null - checks whether given string is null.
  * @s: string to be checked.
  *
